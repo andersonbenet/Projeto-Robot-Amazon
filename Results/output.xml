@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generated="20180928 16:33:55.415" generator="Robot 3.0.4 (Python 2.7.15 on win32)">
+<suite source="C:\Users\anderson.benet\PycharmProjects\Projeto-Robot-Amazon\tests\Amazon.robot" id="s1" name="Amazon">
+<test id="s1-t1" name="TC001 - Usuário deve ser solicitado a fazer login no check-out">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the given ``url``.</doc>
+<arguments>
+<arg>http://www.amazon.com</arg>
+<arg>firefox</arg>
+</arguments>
+<msg timestamp="20180928 16:33:55.536" level="INFO">Opening browser 'firefox' to base url 'http://www.amazon.com'.</msg>
+<status status="PASS" endtime="20180928 16:34:07.094" starttime="20180928 16:33:55.536"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>3s</arg>
+</arguments>
+<msg timestamp="20180928 16:34:10.095" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" endtime="20180928 16:34:10.095" starttime="20180928 16:34:07.095"></status>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" endtime="20180928 16:34:10.943" starttime="20180928 16:34:10.096"></status>
+</kw>
+<doc>Teste para validar solictação de login</doc>
+<status status="PASS" endtime="20180928 16:34:10.944" critical="yes" starttime="20180928 16:33:55.535"></status>
+</test>
+<test id="s1-t2" name="TC002 - Pesquisar produto">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the given ``url``.</doc>
+<arguments>
+<arg>http://www.amazon.com</arg>
+<arg>firefox</arg>
+</arguments>
+<msg timestamp="20180928 16:34:10.946" level="INFO">Opening browser 'firefox' to base url 'http://www.amazon.com'.</msg>
+<status status="PASS" endtime="20180928 16:34:21.510" starttime="20180928 16:34:10.945"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>id=twotabsearchtextbox</arg>
+<arg>Ferrari 458</arg>
+</arguments>
+<msg timestamp="20180928 16:34:21.511" level="INFO">Typing text 'Ferrari 458' into text field 'id=twotabsearchtextbox'.</msg>
+<status status="PASS" endtime="20180928 16:34:21.772" starttime="20180928 16:34:21.511"></status>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<doc>Clicks button identified by ``locator``.</doc>
+<arguments>
+<arg>css=#nav-search &gt; form &gt; div.nav-right &gt; div &gt; input</arg>
+</arguments>
+<msg timestamp="20180928 16:34:21.774" level="INFO">Clicking button 'css=#nav-search &gt; form &gt; div.nav-right &gt; div &gt; input'.</msg>
+<status status="PASS" endtime="20180928 16:34:24.062" starttime="20180928 16:34:21.773"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5s</arg>
+</arguments>
+<msg timestamp="20180928 16:34:29.062" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" endtime="20180928 16:34:29.062" starttime="20180928 16:34:24.062"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>3s</arg>
+</arguments>
+<msg timestamp="20180928 16:34:32.063" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" endtime="20180928 16:34:32.063" starttime="20180928 16:34:29.062"></status>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" endtime="20180928 16:34:33.012" starttime="20180928 16:34:32.063"></status>
+</kw>
+<doc>Teste para validar a busca por produto</doc>
+<status status="PASS" endtime="20180928 16:34:33.012" critical="yes" starttime="20180928 16:34:10.945"></status>
+</test>
+<doc>Suite description</doc>
+<status status="PASS" endtime="20180928 16:34:33.014" starttime="20180928 16:33:55.418"></status>
+</suite>
+<statistics>
+<total>
+<stat fail="0" pass="2">Critical Tests</stat>
+<stat fail="0" pass="2">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat fail="0" id="s1" name="Amazon" pass="2">Amazon</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
